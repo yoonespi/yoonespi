@@ -1,7 +1,7 @@
 ---
 title: "선형대수학"
 date: 2019-02-23
-# categories: 선형대수학 LinearAlegebra
+categories: 선형대수학 LinearAlegebra
 ---
 
 Scalar: 하나의 수(數)
@@ -13,7 +13,6 @@ Matrix: 수들을 2차원으로 배열
 Tensor: 차원이 3차원 이상인 배열
 
 
-```python
+#```python
 
-
-```
+#```
