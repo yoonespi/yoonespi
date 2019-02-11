@@ -1,7 +1,7 @@
 ---
 title: "선형대수학"
 date: 2019-02-23
-categories: LinearAlegebra
+categories: LinearAlgebra
 ---
 
 Scalar: 하나의 수(數)
