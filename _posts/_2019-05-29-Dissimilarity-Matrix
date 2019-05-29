@@ -1,0 +1,23 @@
+---
+title: "Dissimilarity Matrix"
+date: 2019-05-29
+categories: LinearAlgebra
+---
+
+상이성 행렬(Dissimlarity Matrix, 객체x객체의 구조)
+n개의 객체들의 모든 쌍에 대해 가능한 근접성(proximity)의 집합을 저장한다. 이것은 n x n 테이블로 나타내진다. d(i,j)는 객체 i와 객체 j 간에 측정된 차이(difference) 혹은 상이성(dissmilarity)를 나타낸다.
+일반적으로 d(i,j)는 음의 값을 갖지 않으며, 0에 가까울수록 객체 i와 j가 서로 높은 유사성을 가지는 혹은 '가까이' 위치해 있다는 것을 나타낸다.
+그리고 두 객체 간의 차이가 더 클수록 값이 커진다.
+d(i,j) = d(j,i), d(i,i) = 0이기 때문에 아래와같은 행렬을 얻는다.
+       0
+    d(2,1)     0
+    d(3,1)  d(3,2)   0
+      ...     ...   ...
+    d(n,1)  d(n,2)  ... 0
+
+Dissimlarity matrix는 1-mode(one mode) 행렬이라 불리며, 반면 데이터 행렬은 종종 2-mode(two mode) 행렬이라 하는데,
+데이터 행렬은 행과 열이 다른 원소를 나타내고 dissimlaritym matrix는 행과 열이 같은 원소를 나타내기 때문이다.
+많은 군집화 알고리즘은 dissimlaritym matrix를 이용하며 two-mode 행렬일 경우 dissimlaritym matrix로 변환을 해야 한다.
+
+
+Han, Jiawei. and Kamber, Micheline.『데이터 마이닝』. 사이플러스. 2007. pp364-365
